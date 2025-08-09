@@ -1,4 +1,4 @@
-This tutorial is designed for early-stage students aiming to publish in top-tier AI conferences and journals. This document is continuously evolving. If anything is unclear to you, ask ChatGPT for examples.
+This tutorial is designed for students who are new to writing AI papers. This document is continuously evolving. If anything is unclear to you, ask ChatGPT for examples.
 
 
 
