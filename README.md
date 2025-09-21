@@ -1,4 +1,4 @@
-This tutorial is designed for students who are new to writing AI papers. This document is continuously evolving.
+This continuously evolving tutorial is designed for students who are new to writing AI papers.
 
 
 
