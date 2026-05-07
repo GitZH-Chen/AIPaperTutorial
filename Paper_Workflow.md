@@ -132,8 +132,6 @@ paper-project/
 
 在 `ai-paper-writing` 的帮助下，最终成品还需要满足更高一级的检查标准：公式符号和 notation 风格完全一致，行文和排版风格完全一致，`\cref` 等交叉引用正确，图表编号和正文引用一致，文章没有 AI 味，格式符合目标 venue 的投稿要求。
 
-一个成品例子是我的 CVPR 2026 文章：[Hyperbolic Busemann Neural Networks](https://arxiv.org/abs/2602.18858)。
-
 ## 4. Rebuttal：使用 `openreview-rebuttal`
 
 TODO：rebuttal 的原理和论文写作一样，核心是给足够的上下文，并使用 `openreview-rebuttal`。rebuttal 材料可以直接放在当前 paper project 中。
