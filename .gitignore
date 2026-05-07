@@ -1,0 +1,72 @@
+# macOS and local filesystem noise
+.DS_Store
+._*
+
+# Editor and IDE local state
+.idea/
+*.swp
+*.swo
+*~
+AGENTS.md
+push.sh
+
+# LaTeX build outputs
+out/
+build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.ist
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.xdy
+
+# Temporary manuscript exports
+*.bak
+*.tmp
+*.draft.pdf
+*.review.pdf
+*.camera-ready.pdf
+
+# Python and notebook scratch files used for figures or analysis
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Large generated experiment artifacts
+runs/
+wandb/
+checkpoints/
+outputs/
+
+# Keep source PDFs and tutorial PDFs trackable.
+# Do not ignore *.pdf globally.
