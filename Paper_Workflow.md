@@ -12,7 +12,8 @@
     - [3.2 创建项目](#32-创建项目)
     - [3.5 具体写作](#35-具体写作)
     - [3.6 参考文献与 bib check](#36-参考文献与-bib-check)
-    - [3.7 AI review 与投稿前 final checklist](#37-ai-review-与投稿前-final-checklist)
+    - [3.7 AI review 与最后检查](#37-ai-review-与最后检查)
+    - [3.8 最终成品标准](#38-最终成品标准)
   - [4. Rebuttal：使用 `openreview-rebuttal`](#4-rebuttal使用-openreview-rebuttal)
 
 ## 1. 整体工作流简介
@@ -41,6 +42,8 @@
 ## 3. 写作：使用 `ai-paper-writing`
 
 本节整理主论文写作阶段的具体流程，对应整体 workflow 中的 Step 1 到 Step 5。核心是 human-in-the-loop：你告诉 AI 怎么写，它按照你的口述草稿，整理语言并生成 LaTeX。本地 project 中应包含 Markdown 笔记，例如核心方法、技术细节、关键推导、实验结果和失败案例。这些笔记是写作素材，agent 负责组织和展开，不负责自由发挥。
+
+**非常重要：AI 做的任何修改，作者都必须仔细复核一遍。**
 
 ### 3.1 熟读 5 到 20 篇紧密相关论文
 
@@ -118,10 +121,16 @@ paper-project/
 
 不管采用什么方式管理参考文献，最后都应该再用参考文献检查工具做一次检查，确认没有虚假参考文献、错误题名、错误作者或 citation 与原文不匹配的问题。
 
-### 3.7 AI review 与投稿前 final checklist
+### 3.7 AI review 与最后检查
 
 投稿前可以在网上找一些结构化的 review prompt 或 AI review 工具，让 AI 按审稿人视角检查自己的文章。这类指令和网址非常多，也可以在小红书等平台搜索。AI review 的作用是给出一份风险清单，帮助你发现明显问题。AI 给的意见仅供参考，有则改之，无则加勉。
 
+最后还需要让 Codex 做一次最后检查，包括对全文执行 `grammar check`、对参考文献执行 `bib check`，以及根据官方模板和 guideline 检查 PDF/LaTeX。
+
+### 3.8 最终成品标准
+
+在`ai-paper-writing`的帮助下，最终成品还需要满足更高一级的检查标准：公式符号和 notation 风格完全一致，行文和排版风格完全一致，`\cref` 等交叉引用正确，图表编号和正文引用一致，文章没有 AI 味，格式符合目标 venue 的投稿要求。
+
 ## 4. Rebuttal：使用 `openreview-rebuttal`
 
-TODO
+TODO：rebuttal 的原理和论文写作一样，核心是给足够的上下文，并使用 `openreview-rebuttal`。rebuttal 材料可以直接放在当前 paper project 中。
