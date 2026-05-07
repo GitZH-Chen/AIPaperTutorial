@@ -130,7 +130,7 @@ paper-project/
 
 ### 3.6 最终成品标准
 
-在 `ai-paper-writing` 的帮助下，最终成品还需要满足更高一级的检查标准：公式符号和 notation 风格完全一致，行文和排版风格完全一致，`\cref` 等交叉引用正确，图表编号和正文引用一致，文章没有 AI 味，格式符合目标 venue 的投稿要求。
+在 `ai-paper-writing` 的帮助下，最终成品起码符合以下标准：公式符号和 notation 风格完全一致，行文和排版风格完全一致，`\cref` 等交叉引用正确，图表编号和正文引用一致，文章没有 AI 味，格式符合目标 venue 的投稿要求。
 
 ## 4. Rebuttal：使用 `openreview-rebuttal`
 
