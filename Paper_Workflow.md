@@ -124,7 +124,7 @@ paper-project/
 
 ### 3.5 AI review 与最后检查
 
-投稿前可以在网上找一些结构化的 review prompt 或 AI review 工具，让 AI 按审稿人视角检查自己的文章。这类指令和网址非常多，也可以在小红书等平台搜索。AI review 的作用是给出一份风险清单，帮助你发现明显问题。AI 给的意见仅供参考，有则改之，无则加勉。
+投稿前可以在网上找一些结构化的 review prompt 或 AI review 工具，让 AI 按审稿人视角检查自己的文章。这类指令和网址非常多，也可以在小红书等平台搜索。AI 给的意见仅供参考，有则改之，无则加勉。
 
 最后还需要让 Codex 做一次最后检查，包括对全文执行 `grammar check`、对参考文献执行 `bib check`，以及根据官方模板和 guideline 检查 PDF/LaTeX。
 
