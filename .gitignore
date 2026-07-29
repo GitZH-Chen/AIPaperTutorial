@@ -70,3 +70,4 @@ outputs/
 
 # Keep source PDFs and tutorial PDFs trackable.
 # Do not ignore *.pdf globally.
+Aux
