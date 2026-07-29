@@ -57,7 +57,7 @@ Here is reference structure:
 
 | Component | Directory | Purpose |
 | --- | --- | --- |
-| Project instructions | `X_Instructions/` | Systematic, project-specific instructions or skills for each stage. |
+| Project instructions | `X_Instructions/` | Systematic, project-specific instructions for each stage. |
 | 0. Preparation | `0_Aux/` | Guidelines, papers, notes, and early drafts. |
 | 1. Implementation | `1_Code/` | Code. |
 | 2. Theory and experiment records | `2_TheoriesAndExperimentsLog/` | Theoretical derivations and experiment records. |
@@ -66,6 +66,8 @@ Here is reference structure:
 | 5. Finalization | `5_Release_code/` | Camera-ready checks and reviewed public artifacts. |
 
 The purpose of this structure is to make the entire project accessible from any research stage, so an agent does not treat each task in isolation. During rebuttal, for example, the agent should see the manuscript, code, theory and experiment records, submitted versions, reviewer comments, and response history, rather than only a review question or the paper itself. This cross-stage context enables consistent and evidence-based decisions.
+
+`X_Instructions/Lessons/` records recurring, generalizable problems found during actual use, together with their causes and verified corrections. These reusable lessons can then be incorporated into the relevant personal research skills, preventing the same mistakes and continuously improving the workflow.
 
 ## Two Writing Resources
 
