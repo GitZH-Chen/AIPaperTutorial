@@ -69,6 +69,113 @@ The purpose of this structure is to make the entire project accessible from any 
 
 `X_Instructions/Lessons/` records recurring, generalizable problems found during actual use, together with their causes and verified corrections. These reusable lessons can then be incorporated into the relevant personal research skills, preventing the same mistakes and continuously improving the workflow.
 
+## Rebuttal Evidence Workflow
+
+A rebuttal usually has two stages. The initial stage answers the original reviews. The discussion stage handles reviewer follow-ups, narrower evaluation criteria, and newly requested analyses or experiments. Organize both stages around stable reviewer-question IDs so that later work remains connected to the original concern.
+
+The internal evidence workflow is independent of the final response format:
+
+```text
+notes/
+  Internal reasoning, question decomposition, derivations, experiment plans,
+  and gaps identified during discussion
+        │
+        ▼
+log/
+  Commands, configurations, run records, raw outputs, failures, reruns,
+  diagnostics, and aggregation evidence
+        │
+        ▼
+Stable question-level records in the rebuttal evidence root
+  Core settings, final tables, verified conclusions, limitations,
+  and an evidence index
+        │
+        ▼
+Authoritative response workspace
+  Paste-ready initial responses and discussion replies
+```
+
+Not every question requires all four layers. A conceptual question with no new experiment may proceed directly from an internal note to a paste-ready response. Create a stable question-level record when the work produces durable experimental results, a substantial derivation, or another result that should remain independently auditable.
+
+### Reference Structure
+
+The following example uses reviewer numbers and question numbers. `R1`, `R2`, and `R3` identify reviewers in platform display order. `Q1`, `Q2`, and `Q3` identify actionable questions in the order recorded for that reviewer.
+
+```text
+2_TheoriesAndExperimentsLog/
+└── Rebuttal-<Venue-Year>/
+    ├── 00-README.md
+    ├── 01-Question-Registry.md
+    │
+    ├── R1-Q2-Additional-Experiment.md
+    ├── R2-Q1-Efficiency-Analysis.md
+    ├── R3-Q3-Robustness.md
+    │
+    ├── notes/
+    │   ├── R1/
+    │   │   ├── 00-Reviewer-Map.md
+    │   │   ├── Q1-Conceptual-Clarification.md
+    │   │   └── Q2-Additional-Experiment/
+    │   │       ├── 00-README.md
+    │   │       ├── Round-01-Initial-Question-and-Preparation.md
+    │   │       ├── Round-01-Experiment-Design.md
+    │   │       ├── Round-02-Discussion-Gaps.md
+    │   │       ├── Round-02-Experiment-Design.md
+    │   │       └── 90-Evidence-Index.md
+    │   │
+    │   ├── R2/
+    │   │   ├── 00-Reviewer-Map.md
+    │   │   ├── Q1-Efficiency-Analysis/
+    │   │   │   ├── 00-README.md
+    │   │   │   ├── Round-01-Initial-Question-and-Preparation.md
+    │   │   │   ├── Round-01-Experiment-Design.md
+    │   │   │   └── 90-Evidence-Index.md
+    │   │   └── Q2-Scope-and-Limitations.md
+    │   │
+    │   └── R3/
+    │       ├── 00-Reviewer-Map.md
+    │       ├── Q1-Definition.md
+    │       ├── Q2-Comparison.md
+    │       └── Q3-Robustness/
+    │           ├── 00-README.md
+    │           ├── Round-01-Initial-Question-and-Preparation.md
+    │           ├── Round-01-Experiment-Design.md
+    │           └── 90-Evidence-Index.md
+    │
+    └── log/
+        ├── R1-Q2-Additional-Experiment/
+        │   ├── R1-Q2-current.md
+        │   ├── run-<date>.md
+        │   ├── raw/
+        │   └── aggregate/
+        ├── R2-Q1-Efficiency-Analysis/
+        └── R3-Q3-Robustness/
+```
+
+`00-README.md` explains the scope and authoritative locations. `01-Question-Registry.md` provides the global status table. For each question, it should map the verbatim review source, the initial response, discussion rounds, experiment status, stable record, paste-ready response file, and current conclusion. A weakness repeated as an explicit question should map to the same `Q` ID rather than creating duplicate records.
+
+For a simple question, keep one note such as `notes/R1/Q1-Conceptual-Clarification.md`. For a question that requires experiments, repeated diagnosis, theoretical derivation, or reviewer follow-up, use a question directory. `Round-01` covers the original review and initial rebuttal. `Round-02` covers the first discussion follow-up, with later rounds added only when needed. A genuinely new discussion question receives the next available `Q` number.
+
+The stable record at the rebuttal evidence root is not the final response draft. It should contain the verified setting, final result table, concise validity issues, conclusion, supported and unsupported claims, and links to authoritative notes, logs, code, and raw artifacts. Temporary hypotheses remain in `notes/`. Operational details remain in `log/`. Reviewer-facing prose remains in the response workspace.
+
+For a Markdown-based review platform, the response workspace can use the following layout:
+
+```text
+4_Rebuttal/
+└── <Venue-Year>/
+    ├── Reviews.md
+    ├── Initial/
+    │   ├── R1.md
+    │   ├── R2.md
+    │   └── R3.md
+    └── Discussion/
+        ├── R1.md
+        ├── R2.md
+        └── R3.md
+```
+
+If a venue requires a LaTeX rebuttal, keep the same evidence workflow and write only the final paste-ready response in the designated LaTeX or Overleaf project. Changing the response surface must not change or duplicate the preceding evidence organization.
+
 ## Two Writing Resources
 
 - [`Tutorial.pdf`](Tutorial.pdf) covers LaTeX organization, references, equations, submission, rebuttal, tools, papers, and code.
