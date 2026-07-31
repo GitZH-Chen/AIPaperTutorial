@@ -95,7 +95,7 @@ Authoritative response workspace
   Paste-ready initial responses and discussion replies
 ```
 
-Not every question requires all four layers. A conceptual question with no new experiment may proceed directly from an internal note to a paste-ready response. Create a stable question-level record when the work produces durable experimental results, a substantial derivation, or another result that should remain independently auditable.
+Use only the layers a question needs: conceptual questions can move directly from an internal note to a paste-ready response, while durable experimental results, substantial derivations, and other auditable findings require a stable question-level record.
 
 ### Reference Structure
 
@@ -152,11 +152,7 @@ The following example uses reviewer numbers and question numbers. `R1`, `R2`, an
         └── R3-Q3-Robustness/
 ```
 
-`00-README.md` explains the scope and authoritative locations. `01-Question-Registry.md` provides the global status table. For each question, it should map the verbatim review source, the initial response, discussion rounds, experiment status, stable record, paste-ready response file, and current conclusion. A weakness repeated as an explicit question should map to the same `Q` ID rather than creating duplicate records.
-
-For a simple question, keep one note such as `notes/R1/Q1-Conceptual-Clarification.md`. For a question that requires experiments, repeated diagnosis, theoretical derivation, or reviewer follow-up, use a question directory. `Round-01` covers the original review and initial rebuttal. `Round-02` covers the first discussion follow-up, with later rounds added only when needed. A genuinely new discussion question receives the next available `Q` number.
-
-The stable record at the rebuttal evidence root is not the final response draft. It should contain the verified setting, final result table, concise validity issues, conclusion, supported and unsupported claims, and links to authoritative notes, logs, code, and raw artifacts. Temporary hypotheses remain in `notes/`. Operational details remain in `log/`. Reviewer-facing prose remains in the response workspace.
+`00-README.md` defines the scope and authoritative locations, while `01-Question-Registry.md` tracks each question's review source, responses, discussion rounds, experiment status, evidence record, response file, and conclusion. Reuse the same `Q` ID for repeated issues, assign a new one only to genuinely new questions, and keep simple questions in a single note while giving experiment-heavy, theoretical, or recurring questions a directory with `Round-01` for the initial rebuttal and later rounds only as needed. The root stable record should summarize verified settings, final results, validity issues, conclusions, claim boundaries, and authoritative links; keep temporary hypotheses in `notes/`, operational details in `log/`, and reviewer-facing prose in the response workspace.
 
 For a Markdown-based review platform, the response workspace can use the following layout:
 
@@ -173,8 +169,6 @@ For a Markdown-based review platform, the response workspace can use the followi
         ├── R2.md
         └── R3.md
 ```
-
-If a venue requires a LaTeX rebuttal, keep the same evidence workflow and write only the final paste-ready response in the designated LaTeX or Overleaf project. Changing the response surface must not change or duplicate the preceding evidence organization.
 
 ## Two Writing Resources
 
